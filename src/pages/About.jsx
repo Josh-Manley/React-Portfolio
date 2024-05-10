@@ -1,5 +1,11 @@
 export default function About() {
   const styles = {
+    img: {
+      width: '20%',
+      borderRadius: '15%',
+      marginTop: '1vw',
+      marginBottom: '1vw',
+    },
     text: {
       fontSize: '45px',
       fontFamily: 'arial',
@@ -9,6 +15,7 @@ export default function About() {
   return (
     <div>
       <h1>About Me</h1>
+      <img style={styles.img} src="/assets/portfolio picture.png" alt="portfolio picture" />
       <p style={styles.text}>
         My name is Josh manley, im an aspiring web/software developer. I love going outdoors and being in the mountains.
         I'ts very peaceful, thats one of the benefits of living in Utah. I also enjoy cooking for my family, and playing
