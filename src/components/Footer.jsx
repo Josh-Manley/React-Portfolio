@@ -1,15 +1,22 @@
-import {Link} from 'react-router-dom';
-
 export default function Footer() {
+  const styles = {
+    img: {
+      width: '60px',
+      margin: '5px',
+    },
+  };
+
   return (
-    <ul className="nav">
+    <ul className="nav justify-content-center">
       <li className="nav-item">
-        <Link to="https://github.com/Josh-Manley"></Link>
-        <img src="../assets/github-logo.png" alt="github icon" />
+        <a href="https://github.com/Josh-Manley" target="blank">
+          <img style={styles.img} src="/assets/github-logo.png" alt="github icon" />
+        </a>
       </li>
       <li className="nav-item">
-        <Link to=""></Link>
-        <img src="../assets/Linkedin-logo.png" alt="linkedin logo" />
+        <a href="">
+          <img style={styles.img} src="/assets/LinkedIn-logo.png" alt="linkedin logo" />
+        </a>
       </li>
     </ul>
   );
