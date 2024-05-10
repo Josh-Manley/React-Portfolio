@@ -1,11 +1,11 @@
 const Project = ({ title, imageUrl, iconUrl, onClick }) => {
-  handleClick = () => {
-    onClick(deployed, github);
-  }
+  // handleClick = () => {
+  //   onClick(deployed, github);
+  // }
   return (
     <div className="card">
-      <p onClick={handleClick}>{title}</p>
-      <img onClick={handleClick} src={iconUrl} />
+      <p>{title}</p>
+      <img src={iconUrl} />
       <img src={imageUrl} alt={title} />
     </div>
   )
