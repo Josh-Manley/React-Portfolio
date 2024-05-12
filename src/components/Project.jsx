@@ -1,15 +1,31 @@
-const Project = ({ title, imageUrl, iconUrl, onClick }) => {
-  // handleClick = () => {
-  //   onClick(deployed, github);
-  // }
-
-  const styles = {};
+const Project = ({ title, imageUrl, iconUrl, deployedUrl, gitHubUrl }) => {
+  const styles = {
+    img: {
+      width: '50%',
+    },
+    iconImg: {
+      postion: 'absolute',
+      left: '100px',
+      width: '10%',
+    },
+    div: {
+      display: 'inline',
+    },
+  };
 
   return (
-    <div className="card">
-      <p>{title}</p>
-      <img src={imageUrl} alt={title} />
-      <img src={iconUrl} />
+    <div className="p-2">
+      <div>
+        <a href={deployedUrl}>
+          <p>{title}</p>
+        </a>
+
+        <img style={styles.img} src={imageUrl} alt={title} />
+
+        <a href={gitHubUrl}>
+          <img className="icon-img" src={iconUrl} />
+        </a>
+      </div>
     </div>
   );
 };

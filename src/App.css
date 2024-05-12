@@ -10,3 +10,9 @@
   color: azure;
   margin-left: 2vw;
 }
+
+.icon-img {
+  position: absolute;
+  left: 10px;
+  width: 10%;
+}
