@@ -1,4 +1,5 @@
 import Project from '../components/Project';
+import { Container, Row, Col } from 'react-bootstrap'; // Import Bootstrap components
 
 const Portfolio = () => {
   const handleProjectClick = deployed => {
@@ -11,64 +12,66 @@ const Portfolio = () => {
     {
       title: 'Dad Jest Mail',
       imageUrl: '/assets/Screenshot of DadJestMail.png',
-      iconUrl: '/assets/github-logo.png',
+      iconUrl: '/assets/logo.png',
       deployedUrl: 'https://josh-manley.github.io/DadJestMail/',
       gitHubUrl: 'https://github.com/Josh-Manley/DadJestMail',
     },
     {
       title: 'Timetracker3000',
       imageUrl: '/assets/Timetracker-screenshot.png',
-      iconUrl: '/assets/github-logo.png',
+      iconUrl: '/assets/logo.png',
       deployedUrl: '',
       gitHubUrl: '',
     },
     {
       title: 'Weather Dashboard',
       imageUrl: '/assets/Screenshot of Weather Dashboard.png',
-      iconUrl: '/assets/github-logo.png',
+      iconUrl: '/assets/logo.png',
       deployedUrl: '',
       gitHubUrl: '',
     },
     {
       title: '',
       imageUrl: 'project1.jpg',
-      iconUrl: '/assets/github-logo.png',
+      iconUrl: '/assets/logo.png',
       deployedUrl: '',
       gitHubUrl: '',
     },
     {
       title: '',
       imageUrl: 'project1.jpg',
-      iconUrl: '/assets/github-logo.png',
+      iconUrl: '/assets/logo.jpg',
       deployedUrl: '',
       gitHubUrl: '',
     },
     {
       title: '',
       imageUrl: 'project1.jpg',
-      iconUrl: '/assets/github-logo.png',
+      iconUrl: '/assets/logo.jpg',
       deployedUrl: '',
       gitHubUrl: '',
     },
     // Add more project objects as needed
   ];
 
+  
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <div className='d-flex flex-wrap mb-3'>
+    <Container>
+      <h1 className="text-center my-4 portfolio-txt">Portfolio</h1>
+      <Row>
         {projects.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            imageUrl={project.imageUrl}
-            iconUrl={project.iconUrl}
-            deployedUrl={project.deployedUrl}
-            gitHubUrl={project.gitHubUrl}
-          />
+          <Col key={index} lg={6} className="mb-4">
+            <Project
+              title={project.title}
+              imageUrl={project.imageUrl}
+              iconUrl={project.iconUrl}
+              deployedUrl={project.deployedUrl}
+              gitHubUrl={project.gitHubUrl}
+            />
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 };
 
