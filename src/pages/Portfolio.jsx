@@ -40,14 +40,14 @@ const Portfolio = () => {
     {
       title: '',
       imageUrl: 'project1.jpg',
-      iconUrl: '/assets/logo.jpg',
+      iconUrl: '/assets/logo.png',
       deployedUrl: '',
       gitHubUrl: '',
     },
     {
       title: '',
       imageUrl: 'project1.jpg',
-      iconUrl: '/assets/logo.jpg',
+      iconUrl: '/assets/logo.png',
       deployedUrl: '',
       gitHubUrl: '',
     },
@@ -57,7 +57,7 @@ const Portfolio = () => {
   
   return (
     <Container>
-      <h1 className="text-center my-4 portfolio-txt">Portfolio</h1>
+      <h1 className="text-center my-5 portfolio-txt">Portfolio</h1>
       <Row>
         {projects.map((project, index) => (
           <Col key={index} lg={6} className="mb-4">

@@ -77,7 +77,6 @@ export default function Contact() {
             value={email}
             onChange={handleInputChange}
             onBlur={handleBlur}
-            placeholder="email@example.com"
           />
           {emailError && <small className="text-danger">{emailError}</small>}
         </div>
@@ -87,7 +86,9 @@ export default function Contact() {
           </label>
           <textarea className="form-control" id="message" rows="5"></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
       </form>
     </div>
   );

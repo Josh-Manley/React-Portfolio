@@ -10,7 +10,7 @@ export default function Footer() {
     <ul className="nav justify-content-center">
       <li className="nav-item">
         <a href="https://github.com/Josh-Manley" target="blank">
-          <img style={styles.img} src="/assets/github-logo.png" alt="github icon" />
+          <img style={styles.img} src="/assets/logo.png" alt="github icon" />
         </a>
       </li>
       <li className="nav-item">
