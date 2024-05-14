@@ -26,3 +26,15 @@ body {
 #form, #resume {
   font-family: 'Open Sans';
 }
+.overlay {
+  filter: contrast(50%);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.overlay:hover {
+  filter: none;
+}

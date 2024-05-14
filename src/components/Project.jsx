@@ -5,14 +5,7 @@ const Project = ({ title, imageUrl, iconUrl, deployedUrl, gitHubUrl }) => {
       position: 'relative',
       borderRadius: '2%'
     },
-    overlay: {
-      position: 'absolute',
-      bottom: 10,
-      left: 10,
-      backgroundColor: 'rgba(255, 255, 255, 0.8)',
-      padding: '5px 10px',
-      borderRadius: '5px',
-    },
+    
     icon: {
       position: 'absolute',
       top: 10,
@@ -29,7 +22,7 @@ const Project = ({ title, imageUrl, iconUrl, deployedUrl, gitHubUrl }) => {
   return (
     <div className="position-relative">
       <img style={styles.img} src={imageUrl} alt={title} />
-      <div style={styles.overlay}>
+      <div className="overlay">
         <a style={styles.a} href={deployedUrl}>{title}</a>
       </div>
       <a href={gitHubUrl} style={styles.icon}>
