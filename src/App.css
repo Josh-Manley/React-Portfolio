@@ -1,5 +1,6 @@
 body {
   background-color: rgb(255, 255, 255);
+  min-height: 100vh;
 }
 .header {
   display: flex;
@@ -21,4 +22,7 @@ body {
 .portfolio-txt {
   font-family:'Open Sans';
   font-size: 4rem;
+}
+#form, #resume {
+  font-family: 'Open Sans';
 }

@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
 
 export default function Contact() {
+  const styles = {
+    footer: {
+      position: 'relative',
+      bottom: '-150px'
+    }
+  }
+
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -48,7 +56,7 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div id='form'>
       <form onSubmit={handleSubmit}>
         <div className="mb-3 w-50">
           <label htmlFor="Name" className="form-label col-form-label-lg">
@@ -90,6 +98,10 @@ export default function Contact() {
           Submit
         </button>
       </form>
+      <div style={styles.footer}>
+      <Footer />
     </div>
+    </div>
+    
   );
 }

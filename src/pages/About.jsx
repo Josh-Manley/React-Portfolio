@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function About() {
   const styles = {
     img: {
@@ -37,6 +39,7 @@ export default function About() {
         recently decided to make a career change to do something more beneficial with my career life and this seemed
         like the right direction.
       </p>
+      <Footer />
     </div>
   );
 }

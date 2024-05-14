@@ -1,12 +1,8 @@
 import Project from '../components/Project';
 import { Container, Row, Col } from 'react-bootstrap'; // Import Bootstrap components
+import Footer from '../components/Footer';
 
 const Portfolio = () => {
-  const handleProjectClick = deployed => {
-    <link></link>;
-    // You can perform any action based on the clicked project title
-    // For example, open a modal, navigate to a detail page, etc.
-  };
 
   const projects = [
     {
@@ -71,7 +67,11 @@ const Portfolio = () => {
           </Col>
         ))}
       </Row>
+      <div>
+        <Footer />
+      </div>
     </Container>
+    
   );
 };
 
