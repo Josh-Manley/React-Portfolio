@@ -3,27 +3,28 @@ body {
   min-height: 100vh;
 }
 .header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   font-family: 'Roboto';
-  font-size: 2rem;
-  height: 10vw;
+  font-size: 2.5vw;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
 }
 #header-name {
-  position: relative;
-  top: -2vw;
-  font-size: 4rem;
+  font-size: 3.5vw;
   font-family: 'Roboto';
   color: azure;
   margin-left: 2vw;
 }
 .portfolio-txt {
-  font-family:'Open Sans';
+  font-family: 'Open Sans';
   font-size: 4rem;
 }
-#form, #resume {
+#form,
+#resume {
   font-family: 'Open Sans';
 }
 #resume {

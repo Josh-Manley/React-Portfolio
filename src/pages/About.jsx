@@ -6,8 +6,8 @@ export default function About() {
       width: '200px',
       height: '200px',
       borderRadius: '50%',
-      marginTop: '2vw',
-      marginBottom: '2vw',
+      marginTop: '4vh',
+      marginBottom: '4vh',
     },
     text: {
       fontSize: '2.6rem',
@@ -18,7 +18,7 @@ export default function About() {
       fontFamily: 'Open Sans',
     },
     aboutContent: {
-      marginTop: '6vw',
+      marginTop: '6vh',
       marginLeft: '6vw',
       marginRight: '6vw',
     },

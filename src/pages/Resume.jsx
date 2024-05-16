@@ -3,8 +3,8 @@ import Footer from '../components/Footer';
 export default function Resume() {
   const styles = {
     h1: {
-      marginBottom: '20px',
-      marginTop: '20px',
+      marginBottom: '3vw',
+      marginTop: '3vw',
       fontSize: '3rem'
     },
     h4: {
