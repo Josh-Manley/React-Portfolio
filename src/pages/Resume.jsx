@@ -10,13 +10,14 @@ export default function Resume() {
     h4: {
       fontSize: '2rem',
     },
+    
   };
 
   return (
     <div id="resume">
       <h1 style={styles.h1}>Resume</h1>
       <p>
-        Download Resume <a href="https://profile.indeed.com/p/joshm-hxu0gcz">Link</a>
+      <a id='resume-link' href="https://profile.indeed.com/p/joshm-hxu0gcz"> Download Resume Link</a>
       </p>
       <h4 style={styles.h4}>Front-End proficiencies</h4>
       <ul className="resume-list">

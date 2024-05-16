@@ -1,11 +1,13 @@
 body {
-  background-color: rgb(237, 203, 203);
+  background-color: rgb(167, 101, 113);
   min-height: 100vh;
+  color: rgb(174, 173, 240);
 }
 .header {
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: rgb(64, 78, 77);
+  color: rgb(216, 220, 255);
   font-family: 'Roboto';
   font-size: 2.5vw;
   height: 100%;
@@ -16,7 +18,6 @@ body {
 #header-name {
   font-size: 3.5vw;
   font-family: 'Roboto';
-  color: azure;
   margin-left: 2vw;
 }
 .portfolio-txt {
@@ -29,6 +30,13 @@ body {
 }
 #resume {
   margin-left: 3vw;
+}
+#resume-link {
+  text-decoration: none;
+  color: inherit;
+}
+#resume-link:hover {
+  color: rgb(64, 78, 77);
 }
 .overlay {
   filter: contrast(50%);
