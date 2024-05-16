@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
 
+import { validateEmail } from '../utils/helpers';
+
 export default function Contact() {
   const styles = {
     footer: {
@@ -61,6 +63,11 @@ export default function Contact() {
 
     if (!message.trim()) {
       setEmailError('Message is required');
+    }
+    if (!validateEmail(email)) {
+      setMessageError('Email or username is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
     }
 
     // Only proceed with submission if all required fields are filled
