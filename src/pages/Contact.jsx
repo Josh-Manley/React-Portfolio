@@ -6,6 +6,10 @@ export default function Contact() {
     footer: {
       position: 'relative',
       bottom: '-150px'
+    },
+    h1: {
+      marginTop: '20px',
+      marginBottom: '20px'
     }
   }
 
@@ -57,6 +61,7 @@ export default function Contact() {
 
   return (
     <div id='form'>
+      <h1 style={styles.h1}>Contact</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3 w-50">
           <label htmlFor="Name" className="form-label col-form-label-lg">

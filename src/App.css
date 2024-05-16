@@ -26,6 +26,9 @@ body {
 #form, #resume {
   font-family: 'Open Sans';
 }
+#resume {
+  margin-left: 3vw;
+}
 .overlay {
   filter: contrast(50%);
   position: absolute;
@@ -40,4 +43,5 @@ body {
 }
 .resume-list {
   list-style: circle;
+  font-size: larger;
 }

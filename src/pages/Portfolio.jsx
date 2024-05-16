@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap'; // Import Bootstrap compo
 import Footer from '../components/Footer';
 
 const Portfolio = () => {
-
   const projects = [
     {
       title: 'Dad Jest Mail',
@@ -27,36 +26,35 @@ const Portfolio = () => {
       gitHubUrl: '',
     },
     {
-      title: '',
-      imageUrl: 'project1.jpg',
+      title: 'Tech Blog',
+      imageUrl: '/assets/Tech blog.png',
       iconUrl: '/assets/logo.png',
-      deployedUrl: '',
-      gitHubUrl: '',
+      deployedUrl: 'https://tech-blog-josh-aa625d499f0d.herokuapp.com/',
+      gitHubUrl: 'https://github.com/Josh-Manley/Tech-Blog?tab=readme-ov-file',
     },
     {
-      title: '',
-      imageUrl: 'project1.jpg',
+      title: 'Note Taker',
+      imageUrl: '/assets/note taker.png',
       iconUrl: '/assets/logo.png',
-      deployedUrl: '',
-      gitHubUrl: '',
+      deployedUrl: 'https://note-taker-sf6a.onrender.com',
+      gitHubUrl: 'https://github.com/Josh-Manley/Note-Taker',
     },
     {
-      title: '',
-      imageUrl: 'project1.jpg',
+      title: 'Work Day Scheduler',
+      imageUrl: '/assets/work day scheduler.png',
       iconUrl: '/assets/logo.png',
-      deployedUrl: '',
-      gitHubUrl: '',
+      deployedUrl: 'https://josh-manley.github.io/Work-Day-Scheduler/',
+      gitHubUrl: 'https://github.com/Josh-Manley/Work-Day-Scheduler',
     },
     // Add more project objects as needed
   ];
 
-  
   return (
     <Container>
-      <h1 className="text-center my-5 portfolio-txt">Portfolio</h1>
+      <h1 className="text-center my-5 portfolio-txt border-bottom border-dark-subtle">Portfolio</h1>
       <Row>
         {projects.map((project, index) => (
-          <Col key={index} lg={6} className="mb-4">
+          <Col key={index} lg={6} className="mb-3">
             <Project
               title={project.title}
               imageUrl={project.imageUrl}
@@ -71,7 +69,6 @@ const Portfolio = () => {
         <Footer />
       </div>
     </Container>
-    
   );
 };
 
