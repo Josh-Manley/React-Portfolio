@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import Footer from '../components/Footer';
 
 export default function About() {
   const styles = {
@@ -18,7 +18,9 @@ export default function About() {
       fontFamily: 'Open Sans',
     },
     aboutContent: {
-      margin: '6vw',
+      marginTop: '6vw',
+      marginLeft: '6vw',
+      marginRight: '6vw',
     },
   };
 

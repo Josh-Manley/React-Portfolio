@@ -5,18 +5,20 @@ export default function Contact() {
   const styles = {
     footer: {
       position: 'relative',
-      bottom: '-150px'
+      bottom: '-150px',
     },
     h1: {
       marginTop: '20px',
-      marginBottom: '20px'
-    }
-  }
+      marginBottom: '20px',
+    },
+  };
 
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
   const [emailError, setEmailError] = useState('');
   const [nameError, setNameError] = useState('');
+  const [messageError, setMessageError] = useState('');
 
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -27,6 +29,9 @@ export default function Contact() {
     } else if (name === 'email') {
       setEmail(value);
       setEmailError('');
+    } else if (name === 'message') {
+      setMessage(value);
+      setMessageError('');
     }
   };
 
@@ -37,6 +42,8 @@ export default function Contact() {
       setNameError('Name is required');
     } else if (name === 'email' && !value.trim()) {
       setEmailError('Email is required');
+    } else if (name === 'message' && !value.trim()) {
+      setMessageError('Message is required');
     }
   };
 
@@ -52,15 +59,19 @@ export default function Contact() {
       setEmailError('Email is required');
     }
 
+    if (!message.trim()) {
+      setEmailError('Message is required');
+    }
+
     // Only proceed with submission if all required fields are filled
-    if (name.trim() && email.trim()) {
+    if (name.trim() && email.trim() && message.trim()) {
       // Example: Call an API to submit the form data
-      console.log('Form submitted:', { name, email });
+      console.log('Form submitted:', { name, email, message });
     }
   };
 
   return (
-    <div id='form'>
+    <div id="form">
       <h1 style={styles.h1}>Contact</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3 w-50">
@@ -97,16 +108,24 @@ export default function Contact() {
           <label htmlFor="Message" className="form-label col-form-label-lg">
             Message:
           </label>
-          <textarea className="form-control" id="message" rows="5"></textarea>
+          <textarea
+            className="form-control"
+            id="message"
+            rows="5"
+            name="message"
+            value={message}
+            onChange={handleInputChange}
+            onBlur={handleBlur}
+          ></textarea>
+          {messageError && <small className="text-danger">{messageError}</small>}
         </div>
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>
       <div style={styles.footer}>
-      <Footer />
+        <Footer />
+      </div>
     </div>
-    </div>
-    
   );
 }

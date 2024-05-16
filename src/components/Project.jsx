@@ -2,7 +2,7 @@ const Project = ({ title, imageUrl, iconUrl, deployedUrl, gitHubUrl }) => {
   const styles = {
     img: {
       width: '100%',
-      height: '60vh',
+      height: '50vh',
       position: 'relative',
       borderRadius: '2%',
     },

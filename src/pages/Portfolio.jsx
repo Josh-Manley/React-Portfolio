@@ -51,7 +51,7 @@ const Portfolio = () => {
 
   return (
     <Container>
-      <h1 className="text-center my-5 portfolio-txt border-bottom border-dark-subtle">Portfolio</h1>
+      <h1 className="text-center my-5 portfolio-txt border-bottom border-dark pb-3">Portfolio</h1>
       <Row>
         {projects.map((project, index) => (
           <Col key={index} lg={6} className="mb-3">
