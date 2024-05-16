@@ -38,3 +38,6 @@ body {
 .overlay:hover {
   filter: none;
 }
+.resume-list {
+  list-style: circle;
+}
