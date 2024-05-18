@@ -15,7 +15,7 @@ const Portfolio = () => {
       title: 'Timetracker3000',
       imageUrl: '/assets/Timetracker-screenshot.png',
       iconUrl: '/assets/logo.png',
-      deployedUrl: '',
+      deployedUrl: 'https://timetracker3000-defb31293696.herokuapp.com/',
       gitHubUrl: 'https://github.com/amandrews09/production',
     },
     {
