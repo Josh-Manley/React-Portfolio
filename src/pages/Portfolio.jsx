@@ -16,7 +16,7 @@ const Portfolio = () => {
       imageUrl: '/assets/Timetracker-screenshot.png',
       iconUrl: '/assets/logo.png',
       deployedUrl: '',
-      gitHubUrl: '',
+      gitHubUrl: 'https://github.com/amandrews09/production',
     },
     {
       title: 'Weather Dashboard',
