@@ -10,7 +10,7 @@ export default function About() {
       marginBottom: '4vh',
     },
     text: {
-      fontSize: '2.6rem',
+      fontSize: 'larger',
       fontFamily: 'Open Sans',
     },
     aboutMe: {
