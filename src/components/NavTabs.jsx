@@ -4,7 +4,7 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav">
+    <ul className="nav nav-pill">
       <li className="nav-item">
         <Link to="/" className={currentPage === '/' ? 'nav-link-active text-decoration-none' : 'nav-link'}>
           About
